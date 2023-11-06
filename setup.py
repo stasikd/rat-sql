@@ -9,13 +9,14 @@ setup(
         '': ['*.asdl'],
     },
     install_requires=[
+        'protobuf == 3.19.0',
         'asdl~=0.1.5',
         'astor~=0.7.1',
         'attrs~=18.2.0',
         'babel~=2.7.0',
         'bpemb~=0.2.11',
         'cython~=0.29.1',
-        # 'entmax~=1.0',
+        'entmax~=1.0',
         'jsonnet~=0.14.0',
         'networkx~=2.2',
         'nltk~=3.4',
@@ -28,7 +29,11 @@ setup(
         'torch~=1.3.1',
         'torchtext~=0.3.1',
         'tqdm~=4.36.1',
-        'transformers~=2.3.0',
+        # 'transformers~=2.3.0',
+        'sentencepiece==0.1.91',
+        'transformers == 3.5.0',
+        # 'transformers',
+        # 'protobuf == 3.19.0'
     ],
     entry_points={"console_scripts": ["ratsql=run:main"]},
 )
